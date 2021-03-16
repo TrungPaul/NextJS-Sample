@@ -13,6 +13,7 @@ export async function auth(ctx) {
   )
 
   if (!!!token) {
+    console.log(ctx)
     goToPage(ctx, '/login')
   }
   return token

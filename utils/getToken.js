@@ -2,7 +2,7 @@ import Cookies from 'js-cookie'
 
 export default ctx => {
   let token = null
-
+  console.log('context', ctx)
   // if context has request info aka Server Side
   if (ctx.req) {
     // ugly way to get cookie value from a string of values
